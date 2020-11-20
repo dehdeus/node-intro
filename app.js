@@ -15,6 +15,9 @@ http.createServer((req, res) => {
         case '/produtos':
             res.end('Olá! Você está na página Produtos')
             break
+        case '/institucional':
+            res.end('Olá! Você está na página Institucional')
+            break
         default:
             res.end(`Ops! Parece que não encontramos a página ${req.url.replace('/', '')}`)
             break
